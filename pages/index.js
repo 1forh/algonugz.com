@@ -5,6 +5,18 @@ export default function Home() {
   const title = 'AlgoNugz';
   const description =
     'Coming Soon - An NFT dispensary on the Algorand blockchain.';
+  const nfts = [
+    {
+      url: 'https://ab2.gallery/asset/432941101',
+      image: '/nugz/NUG001.png',
+      name: 'NUG001 - Sour Diesel',
+    },
+    {
+      url: 'https://ab2.gallery/asset/433312974',
+      image: '/nugz/NUG002.png',
+      name: 'NUG002 - Jack Herer',
+    },
+  ];
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
@@ -72,17 +84,19 @@ export default function Home() {
               <span>Twitter</span>
             </a>
           </div>
-          <div className='mt-10'>
-            <a href='https://ab2.gallery/asset/432941101' className='group'>
-              <Image
-                src='/nugz/NUG001.png'
-                alt='AlgoNugz AK-47'
-                width={200}
-                height={200}
-                className='rounded-lg'
-              />
-              <h2 className='text-green-50'>NUG001 - Sour Diesel</h2>
-            </a>
+          <div className='grid grid-cols-6 gap-5 mt-10'>
+            {nfts.map((it) => (
+              <a href={it.url} className='group'>
+                <Image
+                  src={it.image}
+                  alt={it.name}
+                  width={200}
+                  height={200}
+                  className='rounded-lg'
+                />
+                <h2 className='text-green-50'>{it.name}</h2>
+              </a>
+            ))}
           </div>
         </div>
       </main>
