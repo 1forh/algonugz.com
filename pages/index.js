@@ -73,13 +73,16 @@ export default function Home() {
             </a>
           </div>
           <div className='mt-10'>
-            <Image
-              src='/nugz/NUG001.png'
-              alt='AlgoNugz AK-47'
-              width={200}
-              height={200}
-              className='rounded-lg'
-            />
+            <a href='https://ab2.gallery/asset/432941101' className='group'>
+              <Image
+                src='/nugz/NUG001.png'
+                alt='AlgoNugz AK-47'
+                width={200}
+                height={200}
+                className='rounded-lg'
+              />
+              <h2 className='text-green-50'>NUG001 - Sour Diesel</h2>
+            </a>
           </div>
         </div>
       </main>
