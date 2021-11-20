@@ -2,10 +2,26 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
+  const title = 'AlgoNugz | An NFT Collection';
+  const description =
+    'A Pixel Art Weed NFT Collection on the Algorand blockchain';
+
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
       <Head>
-        <title>AlgoNugz | A Pixel Art Weed NFT Collection</title>
+        <title>{title}</title>
+
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={description} />
+        <meta
+          name='twitter:image'
+          content={'https://www.algonugz.com/twitter-share-image.png'}
+        />
+        <meta name='twitter:card' content='summary_large_image' />
+
         <link
           rel='apple-touch-icon'
           sizes='180x180'
