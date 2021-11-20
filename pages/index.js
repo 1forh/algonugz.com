@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
-  const title = 'AlgoNugz | An NFT Collection';
+  const title = 'AlgoNugz';
   const description =
-    'A Pixel Art Weed NFT Collection on the Algorand blockchain';
+    'Coming Soon - An NFT dispensary on the Algorand blockchain.';
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
@@ -27,13 +27,12 @@ export default function Home() {
         <div>
           <h1 className='mb-2 text-5xl font-bold text-green-300'>AlgoNugz</h1>
           <h2 className='text-xl text-green-50'>
-            Coming Soon - A Pixel Art Weed NFT Collection on the Algorand
-            blockchain
+            Coming Soon - An NFT dispensary on the Algorand blockchain.
           </h2>
           <div className='mt-10'>
             <Image
-              src='/nugz/algonugz001.png'
-              alt='AlgoNugz #001'
+              src='/nugz/NUG001.png'
+              alt='AlgoNugz AK-47'
               width={200}
               height={200}
               className='rounded-lg'
