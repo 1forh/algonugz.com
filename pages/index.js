@@ -9,12 +9,26 @@ export default function Home() {
     {
       url: 'https://ab2.gallery/asset/432941101',
       image: '/nugz/NUG001.png',
-      name: 'NUG001 - Sour Diesel',
+      id: 'NUG001',
+      name: 'Sour Diesel',
     },
     {
       url: 'https://ab2.gallery/asset/433312974',
       image: '/nugz/NUG002.png',
-      name: 'NUG002 - Jack Herer',
+      id: 'NUG002',
+      name: 'Jack Herer',
+    },
+    {
+      url: 'https://ab2.gallery/asset/434879391',
+      image: '/nugz/NUG003.png',
+      id: 'NUG003',
+      name: 'Wedding Cake',
+    },
+    {
+      url: 'https://ab2.gallery/asset/434881568',
+      image: '/nugz/NUG004.png',
+      id: 'NUG004',
+      name: 'Durban Poison',
     },
   ];
 
@@ -78,15 +92,14 @@ export default function Home() {
                 <path
                   fill='currentColor'
                   d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z'
-                  class=''
                 ></path>
               </svg>
               <span>Twitter</span>
             </a>
           </div>
           <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-4 lg:grid-cols-6'>
-            {nfts.map((it) => (
-              <a href={it.url} className='group'>
+            {nfts.map((it, index) => (
+              <a href={it.url} className='group' key={index}>
                 <Image
                   src={it.image}
                   alt={it.name}
@@ -94,6 +107,7 @@ export default function Home() {
                   height={200}
                   className='rounded-lg'
                 />
+                <h2 className='text-green-50'>{it.id}</h2>
                 <h2 className='text-green-50'>{it.name}</h2>
               </a>
             ))}
