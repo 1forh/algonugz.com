@@ -84,7 +84,7 @@ export default function Home() {
               <span>Twitter</span>
             </a>
           </div>
-          <div className='grid grid-cols-6 gap-5 mt-10'>
+          <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-4 lg:grid-cols-6'>
             {nfts.map((it) => (
               <a href={it.url} className='group'>
                 <Image
