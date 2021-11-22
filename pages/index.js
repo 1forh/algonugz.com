@@ -3,8 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   const title = 'AlgoNugz';
-  const description =
-    'Coming Soon - An NFT dispensary on the Algorand blockchain.';
+  const description = 'An NFT dispensary on the Algorand blockchain.';
   const nfts = [
     {
       url: 'https://ab2.gallery/asset/432941101',
@@ -78,7 +77,7 @@ export default function Home() {
         <div>
           <h1 className='mb-2 text-5xl font-bold text-green-300'>AlgoNugz</h1>
           <h2 className='mb-10 text-xl text-green-50'>
-            A brand new NFT dispensary on the Algorand blockchain.
+            An NFT dispensary on the Algorand blockchain.
             <br /> Check out our home-grown collection of NFT weed nugs.
           </h2>
           <h3 className='overflow-scroll text-xl text-green-50'>
