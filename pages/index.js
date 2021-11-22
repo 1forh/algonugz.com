@@ -87,7 +87,7 @@ export default function Home() {
           </h3>
           <div className='mt-10 space-x-5'>
             <a
-              href='https://ab2.gallery/account/VBGCZBQ34IM6LARXM4R3SBMF4QGWXPQ7DPJF7ARU7I4SHKRRLV2YEMUOMA'
+              href='https://ab2.gallery/address/VBGCZBQ34IM6LARXM4R3SBMF4QGWXPQ7DPJF7ARU7I4SHKRRLV2YEMUOMA'
               className='inline-flex items-center px-5 py-2 text-base font-medium text-white bg-green-600 border border-transparent rounded-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
             >
               AB2 Gallery
