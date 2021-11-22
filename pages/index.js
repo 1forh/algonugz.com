@@ -30,6 +30,18 @@ export default function Home() {
       id: 'NUG004',
       name: 'Durban Poison',
     },
+    {
+      url: 'https://ab2.gallery/asset/435489865',
+      image: '/nugz/NUG005.png',
+      id: 'NUG005',
+      name: 'Purple Urkle',
+    },
+    {
+      url: 'https://ab2.gallery/asset/435492533',
+      image: '/nugz/NUG006.png',
+      id: 'NUG006',
+      name: 'Super Lemon Haze',
+    },
   ];
 
   return (
@@ -97,7 +109,7 @@ export default function Home() {
               <span>Twitter</span>
             </a>
           </div>
-          <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-4 lg:grid-cols-6'>
+          <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
             {nfts.map((it, index) => (
               <a href={it.url} className='group' key={index}>
                 <Image
