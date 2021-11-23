@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
-  const title = 'AlgoNugz';
+  const title = 'AlgoNugz - An NFT Weed Dispensary';
   const description =
     'An NFT dispensary with all of your favorite strains on the Algorand blockchain.';
   const nfts = [
