@@ -190,6 +190,17 @@ export default function Home() {
     },
   ];
 
+  const prerolls = [
+    {
+      url: 'https://ab2.gallery/asset/441631459',
+      image: '/prerolls/PREROLL001.png',
+      id: 'JOINT001',
+      name: 'Preroll #001 - Sour Diesel',
+      quantity: 50,
+      total: 50,
+    },
+  ];
+
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
       <Head>
@@ -257,7 +268,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <h2 className='text-3xl text-green-50'>Strains</h2>
-            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
               {strains.map((it, index) => (
                 <a href={it.url} className='group' key={index}>
                   <Image
@@ -277,7 +288,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <h2 className='text-3xl text-green-50'>Glass Pipes</h2>
-            <div className='grid grid-cols-2 gap-5 mt-6 mt-10 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
               {glass.map((it, index) => (
                 <a href={it.url} className='group' key={index}>
                   <Image
@@ -287,10 +298,29 @@ export default function Home() {
                     height={200}
                     className='rounded-lg'
                   />
-                  <p className='text-green-50'></p>
                   <h3 className='text-green-50'>
                     {it.id} &middot; {it.quantity}/{it.total}
                   </h3>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className='mt-10'>
+            <h2 className='text-3xl text-green-50'>Prerolls</h2>
+            <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
+              {prerolls.map((it, index) => (
+                <a href={it.url} className='group' key={index}>
+                  <Image
+                    src={it.image}
+                    alt={it.id}
+                    width={400}
+                    height={400}
+                    className='rounded-lg'
+                  />
+                  <p className='text-green-50'>
+                    {it.id} &middot; {it.quantity}/{it.total}
+                  </p>
+                  <h3 className='text-green-50'>{it.name}</h3>
                 </a>
               ))}
             </div>
