@@ -5,42 +5,146 @@ export default function Home() {
   const title = 'AlgoNugz - An NFT Weed Dispensary';
   const description =
     'An NFT dispensary with all of your favorite strains on the Algorand blockchain.';
-  const nfts = [
+  const strains = [
     {
       url: 'https://ab2.gallery/asset/432941101',
       image: '/nugz/NUG001.png',
       id: 'NUG001',
       name: 'Sour Diesel',
+      quantity: 47,
+      total: 50,
     },
     {
       url: 'https://ab2.gallery/asset/433312974',
       image: '/nugz/NUG002.png',
       id: 'NUG002',
       name: 'Jack Herer',
+      quantity: 7,
+      total: 10,
     },
     {
       url: 'https://ab2.gallery/asset/434879391',
       image: '/nugz/NUG003.png',
       id: 'NUG003',
       name: 'Wedding Cake',
+      quantity: 9,
+      total: 10,
     },
     {
       url: 'https://ab2.gallery/asset/434881568',
       image: '/nugz/NUG004.png',
       id: 'NUG004',
       name: 'Durban Poison',
+      quantity: 9,
+      total: 10,
     },
     {
       url: 'https://ab2.gallery/asset/435489865',
       image: '/nugz/NUG005.png',
       id: 'NUG005',
       name: 'Purple Urkle',
+      quantity: 8,
+      total: 10,
     },
     {
       url: 'https://ab2.gallery/asset/435492533',
       image: '/nugz/NUG006.png',
       id: 'NUG006',
       name: 'Super Lemon Haze',
+      quantity: 9,
+      total: 10,
+    },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG007.png',
+    //   id: 'NUG007',
+    //   name: 'Northern Lights',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG008.png',
+    //   id: 'NUG008',
+    //   name: 'OG Kush',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG009.png',
+    //   id: 'NUG009',
+    //   name: 'Blue Dream',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG010.png',
+    //   id: 'NUG010',
+    //   name: 'Gelato',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG010.png',
+    //   id: 'NUG011',
+    //   name: 'Purple Haze',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+    // {
+    //   url: '',
+    //   image: '/nugz/NUG010.png',
+    //   id: 'NUG012',
+    //   name: 'Pineapple Express',
+    //   quantity: 10,
+    //   total: 10,
+    // },
+  ];
+  const glass = [
+    {
+      url: 'https://ab2.gallery/asset/440195494',
+      image: '/glass/GLASS001.png',
+      id: 'GLASS001',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/440198867',
+      image: '/glass/GLASS002.png',
+      id: 'GLASS002',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/440202528',
+      image: '/glass/GLASS003.png',
+      id: 'GLASS003',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/440204216',
+      image: '/glass/GLASS004.png',
+      id: 'GLASS004',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/440209551',
+      image: '/glass/GLASS005.png',
+      id: 'GLASS005',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/440211179',
+      image: '/glass/GLASS006.png',
+      id: 'GLASS006',
+      quantity: 1,
+      total: 1,
     },
   ];
 
@@ -109,20 +213,45 @@ export default function Home() {
               <span>Twitter</span>
             </a>
           </div>
-          <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
-            {nfts.map((it, index) => (
-              <a href={it.url} className='group' key={index}>
-                <Image
-                  src={it.image}
-                  alt={it.name}
-                  width={200}
-                  height={200}
-                  className='rounded-lg'
-                />
-                <h2 className='text-green-50'>{it.id}</h2>
-                <h2 className='text-green-50'>{it.name}</h2>
-              </a>
-            ))}
+          <div className='mt-10'>
+            <h2 className='text-3xl text-green-50'>Strains</h2>
+            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+              {strains.map((it, index) => (
+                <a href={it.url} className='group' key={index}>
+                  <Image
+                    src={it.image}
+                    alt={it.name}
+                    width={200}
+                    height={200}
+                    className='rounded-lg'
+                  />
+                  <p className='text-green-50'>
+                    {it.id} &middot; {it.quantity}/{it.total}
+                  </p>
+                  <h3 className='text-green-50'>{it.name}</h3>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className='mt-10'>
+            <h2 className='text-3xl text-green-50'>Glass Pipes</h2>
+            <div className='grid grid-cols-2 gap-5 mt-6 mt-10 md:grid-cols-3 lg:grid-cols-6'>
+              {glass.map((it, index) => (
+                <a href={it.url} className='group' key={index}>
+                  <Image
+                    src={it.image}
+                    alt={it.id}
+                    width={200}
+                    height={200}
+                    className='rounded-lg'
+                  />
+                  <p className='text-green-50'></p>
+                  <h3 className='text-green-50'>
+                    {it.id} &middot; {it.quantity}/{it.total}
+                  </h3>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </main>
