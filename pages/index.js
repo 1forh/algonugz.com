@@ -27,7 +27,7 @@ export default function Home() {
       image: '/nugz/NUG003.png',
       id: 'NUG003',
       name: 'Wedding Cake',
-      quantity: 9,
+      quantity: 8,
       total: 10,
     },
     {
