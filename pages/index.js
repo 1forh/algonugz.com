@@ -115,14 +115,14 @@ export default function Home() {
       url: 'https://ab2.gallery/asset/440198867',
       image: '/glass/GLASS002.png',
       id: 'GLASS002',
-      quantity: 1,
+      quantity: 0,
       total: 1,
     },
     {
       url: 'https://ab2.gallery/asset/440202528',
       image: '/glass/GLASS003.png',
       id: 'GLASS003',
-      quantity: 1,
+      quantity: 0,
       total: 1,
     },
     {
