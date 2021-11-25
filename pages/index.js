@@ -108,7 +108,7 @@ export default function Home() {
       url: 'https://ab2.gallery/asset/440195494',
       image: '/glass/GLASS001.png',
       id: 'GLASS001',
-      quantity: 1,
+      quantity: 0,
       total: 1,
     },
     {
