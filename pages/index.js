@@ -146,6 +146,48 @@ export default function Home() {
       quantity: 1,
       total: 1,
     },
+    {
+      url: 'https://ab2.gallery/asset/441374122',
+      image: '/glass/GLASS007.png',
+      id: 'GLASS007',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/441375448',
+      image: '/glass/GLASS008.png',
+      id: 'GLASS008',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/441377185',
+      image: '/glass/GLASS009.png',
+      id: 'GLASS009',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/441381089',
+      image: '/glass/GLASS010.png',
+      id: 'GLASS010',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/441384674',
+      image: '/glass/GLASS011.png',
+      id: 'GLASS011',
+      quantity: 1,
+      total: 1,
+    },
+    {
+      url: 'https://ab2.gallery/asset/441389734',
+      image: '/glass/GLASS012.png',
+      id: 'GLASS012',
+      quantity: 1,
+      total: 1,
+    },
   ];
 
   return (
