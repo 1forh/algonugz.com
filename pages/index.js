@@ -154,7 +154,7 @@ export default function Home() {
       total: 1,
     },
     {
-      url: 'https://ab2.gallery/asset/441375448',
+      url: 'https://ab2.gallery/asset/441403797',
       image: '/glass/GLASS008.png',
       id: 'GLASS008',
       quantity: 1,
@@ -182,7 +182,7 @@ export default function Home() {
       total: 1,
     },
     {
-      url: 'https://ab2.gallery/asset/441389734',
+      url: 'https://ab2.gallery/asset/441406410',
       image: '/glass/GLASS012.png',
       id: 'GLASS012',
       quantity: 1,
