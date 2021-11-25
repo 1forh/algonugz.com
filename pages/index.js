@@ -132,20 +132,20 @@ export default function Home() {
       quantity: 1,
       total: 1,
     },
-    {
-      url: 'https://ab2.gallery/asset/440209551',
-      image: '/glass/GLASS005.png',
-      id: 'GLASS005',
-      quantity: 1,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440211179',
-      image: '/glass/GLASS006.png',
-      id: 'GLASS006',
-      quantity: 1,
-      total: 1,
-    },
+    // {
+    //   url: 'https://ab2.gallery/asset/440209551',
+    //   image: '/glass/GLASS005.png',
+    //   id: 'GLASS005',
+    //   quantity: 1,
+    //   total: 1,
+    // },
+    // {
+    //   url: 'https://ab2.gallery/asset/440211179',
+    //   image: '/glass/GLASS006.png',
+    //   id: 'GLASS006',
+    //   quantity: 1,
+    //   total: 1,
+    // },
   ];
 
   return (
