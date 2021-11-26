@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <h2 className='text-3xl text-green-50'>Strains</h2>
-            <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {strains.map((it, index) => (
                 <a href={it.url} className='group' key={index}>
                   <Image
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <h2 className='text-3xl text-green-50'>Glass Pipes</h2>
-            <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {glass.map((it, index) => (
                 <a href={it.url} className='group' key={index}>
                   <Image
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <h2 className='text-3xl text-green-50'>Prerolls</h2>
-            <div className='grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {prerolls.map((it, index) => (
                 <a href={it.url} className='group' key={index}>
                   <Image
