@@ -143,7 +143,7 @@ export default function Home() {
       url: 'https://ab2.gallery/asset/440211179',
       image: '/glass/GLASS006.png',
       id: 'GLASS006',
-      quantity: 1,
+      quantity: 0,
       total: 1,
     },
     {
@@ -196,7 +196,7 @@ export default function Home() {
       image: '/prerolls/PREROLL001.png',
       id: 'JOINT001',
       name: 'Preroll #001 - Sour Diesel',
-      quantity: 50,
+      quantity: 43,
       total: 50,
     },
   ];
