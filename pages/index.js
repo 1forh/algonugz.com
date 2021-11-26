@@ -1,205 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+import { strains, glass, prerolls } from '../data';
 
 export default function Home() {
   const title = 'AlgoNugz - An NFT Weed Dispensary';
   const description =
     'An NFT dispensary with all of your favorite strains on the Algorand blockchain.';
-  const strains = [
-    {
-      url: 'https://ab2.gallery/asset/432941101',
-      image: '/nugz/NUG001.png',
-      id: 'NUG001',
-      name: 'Sour Diesel',
-      quantity: 47,
-      total: 50,
-    },
-    {
-      url: 'https://ab2.gallery/asset/433312974',
-      image: '/nugz/NUG002.png',
-      id: 'NUG002',
-      name: 'Jack Herer',
-      quantity: 7,
-      total: 10,
-    },
-    {
-      url: 'https://ab2.gallery/asset/434879391',
-      image: '/nugz/NUG003.png',
-      id: 'NUG003',
-      name: 'Wedding Cake',
-      quantity: 8,
-      total: 10,
-    },
-    {
-      url: 'https://ab2.gallery/asset/434881568',
-      image: '/nugz/NUG004.png',
-      id: 'NUG004',
-      name: 'Durban Poison',
-      quantity: 9,
-      total: 10,
-    },
-    {
-      url: 'https://ab2.gallery/asset/435489865',
-      image: '/nugz/NUG005.png',
-      id: 'NUG005',
-      name: 'Purple Urkle',
-      quantity: 8,
-      total: 10,
-    },
-    {
-      url: 'https://ab2.gallery/asset/435492533',
-      image: '/nugz/NUG006.png',
-      id: 'NUG006',
-      name: 'Super Lemon Haze',
-      quantity: 9,
-      total: 10,
-    },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG007.png',
-    //   id: 'NUG007',
-    //   name: 'Northern Lights',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG008.png',
-    //   id: 'NUG008',
-    //   name: 'OG Kush',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG009.png',
-    //   id: 'NUG009',
-    //   name: 'Blue Dream',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG010.png',
-    //   id: 'NUG010',
-    //   name: 'Gelato',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG010.png',
-    //   id: 'NUG011',
-    //   name: 'Purple Haze',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-    // {
-    //   url: '',
-    //   image: '/nugz/NUG010.png',
-    //   id: 'NUG012',
-    //   name: 'Pineapple Express',
-    //   quantity: 10,
-    //   total: 10,
-    // },
-  ];
-  const glass = [
-    {
-      url: 'https://ab2.gallery/asset/440195494',
-      image: '/glass/GLASS001.png',
-      id: 'GLASS001',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440198867',
-      image: '/glass/GLASS002.png',
-      id: 'GLASS002',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440202528',
-      image: '/glass/GLASS003.png',
-      id: 'GLASS003',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440204216',
-      image: '/glass/GLASS004.png',
-      id: 'GLASS004',
-      quantity: 1,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440209551',
-      image: '/glass/GLASS005.png',
-      id: 'GLASS005',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/440211179',
-      image: '/glass/GLASS006.png',
-      id: 'GLASS006',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441374122',
-      image: '/glass/GLASS007.png',
-      id: 'GLASS007',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441403797',
-      image: '/glass/GLASS008.png',
-      id: 'GLASS008',
-      quantity: 1,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441377185',
-      image: '/glass/GLASS009.png',
-      id: 'GLASS009',
-      quantity: 0,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441381089',
-      image: '/glass/GLASS010.png',
-      id: 'GLASS010',
-      quantity: 1,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441384674',
-      image: '/glass/GLASS011.png',
-      id: 'GLASS011',
-      quantity: 1,
-      total: 1,
-    },
-    {
-      url: 'https://ab2.gallery/asset/441406410',
-      image: '/glass/GLASS012.png',
-      id: 'GLASS012',
-      quantity: 1,
-      total: 1,
-    },
-  ];
-
-  const prerolls = [
-    {
-      url: 'https://ab2.gallery/asset/441631459',
-      image: '/prerolls/PREROLL001.png',
-      id: 'JOINT001',
-      name: 'Preroll #001 - Sour Diesel',
-      quantity: 43,
-      total: 50,
-    },
-  ];
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
@@ -219,25 +26,25 @@ export default function Home() {
       </Head>
 
       <main className='px-5 py-10 md:px-20'>
-        {/* <div className='mb-8'>
-          <a href='https://twitter.com/algonugz' target='_blank'>
-            <svg width='32' height='32' viewBox='0 0 32 32'>
-              <g fill='none' fill-rule='evenodd'>
-                <circle fill='#00AAEC' cx='16' cy='16' r='16'></circle>
-                <path
-                  d='M26 11.657a7.614 7.614 0 01-2.12.557 3.573 3.573 0 001.623-1.955 7.588 7.588 0 01-2.346.856A3.763 3.763 0 0020.462 10c-2.038 0-3.692 1.583-3.692 3.534 0 .277.032.546.095.805-3.069-.148-5.79-1.553-7.612-3.694a3.414 3.414 0 00-.5 1.779c0 1.225.652 2.307 1.643 2.941a3.823 3.823 0 01-1.673-.44v.043c0 1.713 1.273 3.142 2.963 3.465a3.835 3.835 0 01-1.668.062c.47 1.404 1.833 2.426 3.45 2.453a7.62 7.62 0 01-4.587 1.514c-.298 0-.593-.016-.881-.049A10.813 10.813 0 0013.66 24c6.794 0 10.508-5.385 10.508-10.055 0-.154-.003-.308-.01-.458A7.301 7.301 0 0026 11.657'
-                  fill='#FFF'
-                ></path>
-              </g>
-            </svg>
-          </a>
-        </div> */}
         <div>
-          <h1 className='mb-2 text-5xl font-bold text-green-300'>AlgoNugz</h1>
-          <h2 className='mb-10 text-xl text-green-50'>
-            An NFT weed dispensary with all of your favorite strains.
-            <br /> Check out our home-grown collection of weed nugz.
-          </h2>
+          <div className='flex justify-between'>
+            <div>
+              <h1 className='mb-2 text-5xl font-bold text-green-300'>
+                AlgoNugz
+              </h1>
+              <h2 className='mb-10 text-xl text-green-50'>
+                An NFT weed dispensary with all of your favorite strains.
+                <br /> Check out our home-grown collection of weed nugz.
+              </h2>
+            </div>
+            {/* <div>
+              <Link href='/schedule'>
+                <a className='text-lg font-medium text-green-300 transition-colors duration-150 hover:text-green-500'>
+                  Schedule
+                </a>
+              </Link>
+            </div> */}
+          </div>
           <h3 className='overflow-scroll text-xl text-green-50'>
             Official Address:
             VBGCZBQ34IM6LARXM4R3SBMF4QGWXPQ7DPJF7ARU7I4SHKRRLV2YEMUOMA
