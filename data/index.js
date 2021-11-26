@@ -151,7 +151,7 @@ export const glass = [
     url: 'https://ab2.gallery/asset/441403797',
     image: '/glass/GLASS008.png',
     id: 'GLASS008',
-    quantity: 1,
+    quantity: 0,
     total: 1,
   },
   {
