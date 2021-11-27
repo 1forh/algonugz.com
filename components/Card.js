@@ -29,6 +29,8 @@ function Card({ item }) {
             isZoomed={isZoomed}
             onZoomChange={handleZoomChange}
             zoomMargin={100}
+            overlayBgColorStart='rgba(23, 23, 23, 0.5)'
+            overlayBgColorEnd='rgba(23, 23, 23, 0.75)'
           >
             {isZoomed && (
               <div>
