@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Card from '../components/Card';
 import { strains, glass, prerolls } from '../data';
 
 export default function Home() {
@@ -77,19 +76,7 @@ export default function Home() {
             <h2 className='text-3xl text-green-50'>Strains</h2>
             <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {strains.map((it, index) => (
-                <a href={it.url} className='group' key={index}>
-                  <Image
-                    src={it.image}
-                    alt={it.name}
-                    width={200}
-                    height={200}
-                    className='rounded-lg'
-                  />
-                  <p className='text-green-50'>
-                    {it.id} &middot; {it.quantity}/{it.total}
-                  </p>
-                  <h3 className='text-green-50'>{it.name}</h3>
-                </a>
+                <Card item={it} key={index} />
               ))}
             </div>
           </div>
@@ -97,18 +84,7 @@ export default function Home() {
             <h2 className='text-3xl text-green-50'>Glass Pipes</h2>
             <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {glass.map((it, index) => (
-                <a href={it.url} className='group' key={index}>
-                  <Image
-                    src={it.image}
-                    alt={it.id}
-                    width={200}
-                    height={200}
-                    className='rounded-lg'
-                  />
-                  <h3 className='text-green-50'>
-                    {it.id} &middot; {it.quantity}/{it.total}
-                  </h3>
-                </a>
+                <Card item={it} key={index} />
               ))}
             </div>
           </div>
@@ -116,19 +92,7 @@ export default function Home() {
             <h2 className='text-3xl text-green-50'>Prerolls</h2>
             <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
               {prerolls.map((it, index) => (
-                <a href={it.url} className='group' key={index}>
-                  <Image
-                    src={it.image}
-                    alt={it.id}
-                    width={400}
-                    height={400}
-                    className='rounded-lg'
-                  />
-                  <p className='text-green-50'>
-                    {it.id} &middot; {it.quantity}/{it.total}
-                  </p>
-                  <h3 className='text-green-50'>{it.name}</h3>
-                </a>
+                <Card item={it} key={index} />
               ))}
             </div>
           </div>
