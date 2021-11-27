@@ -58,7 +58,7 @@ function Card({ item }) {
       {item.name && <h3 className='text-green-50'>{item.name}</h3>}
 
       <p className='flex text-green-50'>
-        OG price: &nbsp;
+        <span>OG price: &nbsp;</span>
         <Price price={item.price} />
       </p>
 
