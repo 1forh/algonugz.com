@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const greenLabelStrains = [
   {
     url: 'https://ab2.gallery/asset/432941101',
@@ -213,14 +215,22 @@ export const prerolls = [
 
 export const events = [
   {
-    id: 0,
+    id: uuidv4(),
     title: '🎉 Minted Green Label Nugz',
     description:
       'The first 6 AlgoNugz were minted on the Algorand blockchain. The Sour Diesel nug was minted with a total supply of 50. The other 5 Green Label Nugz were minted with a total supply of 10.',
     date: '11/21/2021',
   },
   {
-    id: 1,
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #1 Begins',
+    description:
+      'As a thank you for the warm welcome to the #algofam, we are dealing out 2 free Sour Diesel nugz! 🔥 Check Twitter for more details.',
+    date: '11/23/2021',
+    nft: greenLabelStrains[0], // Sour Diesel
+  },
+  {
+    id: uuidv4(),
     title: '✨ Minted Glass Pipes',
     description:
       'We minted a set of 12 1/1 Glass Pipe to smoke your sticky nugz out of.',
@@ -228,7 +238,7 @@ export const events = [
     nft: glass[0],
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: '🏷 Black Friday Sale Begins',
     description:
       'Our Black Friday sale begins today. Get "Preroll #001 - Sour Diesel" for only 1A. ',
@@ -236,15 +246,15 @@ export const events = [
     nft: prerolls[0], // Sour Diesel
   },
   {
-    id: 2,
-    title: '🥳 Twitter Giveaway #1',
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #1 Ends',
     description:
       'We gave away 2 Sour Diesel Nugz to 2 of our awesome Twitter followers.',
     date: '11/27/2021',
     nft: greenLabelStrains[0], // Sour Diesel
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: '🏷 Black Friday Sale Ends',
     description:
       'Our Black Friday sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A. ',
@@ -252,14 +262,27 @@ export const events = [
     nft: prerolls[0], // Sour Diesel
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: '⭐️ Gold Label Nugz will be minted',
     description:
       'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves (they may be back). 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/4/2021',
   },
   {
-    id: 5,
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #2 Begins',
+    description:
+      'To celebrate the drop of our first 3 Gold Label Nugz, we are going to give one of our new Gold Label Nugz to a lucky winner on Twitter.',
+    date: '12/4/2021',
+  },
+  {
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #2 Ends',
+    description: 'We will announce the winners of our second giveaway.',
+    date: '12/8/2021',
+  },
+  {
+    id: uuidv4(),
     title: '🔥 Dropping the last 3 Gold Label Nugz',
     description:
       'The remaining 3 Gold Label Nugz will be available for purchase at the dispensary.',
