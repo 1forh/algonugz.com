@@ -18,7 +18,7 @@ function TheSchedule() {
               side={index % 2 === 0 ? 'left' : 'right'}
               key={index}
             />
-          )}
+          ))}
         </div>
       </div>
     </div>
