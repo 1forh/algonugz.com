@@ -206,7 +206,7 @@ export const prerolls = [
     id: 'JOINT001',
     name: 'Preroll #001 - Sour Diesel',
     total: 50,
-    price: 1,
+    price: 2,
     thc: '19%',
   },
 ];
@@ -229,6 +229,14 @@ export const events = [
   },
   {
     id: 2,
+    title: '🏷 Black Friday Sale Begins',
+    description:
+      'Our Black Friday sale begins today. Get "Preroll #001 - Sour Diesel" for only 1A. ',
+    date: '11/26/2021',
+    nft: prerolls[0], // Sour Diesel
+  },
+  {
+    id: 2,
     title: '🥳 Twitter Giveaway #1',
     description:
       'We gave away 2 Sour Diesel Nugz to 2 of our awesome Twitter followers.',
@@ -236,14 +244,22 @@ export const events = [
     nft: greenLabelStrains[0], // Sour Diesel
   },
   {
-    id: 3,
+    id: 2,
+    title: '🏷 Black Friday Sale Ends',
+    description:
+      'Our Black Friday sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A. ',
+    date: '11/28/2021',
+    nft: prerolls[0], // Sour Diesel
+  },
+  {
+    id: 4,
     title: '⭐️ Gold Label Nugz will be minted',
     description:
       'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves (they may be back). 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/4/2021',
   },
   {
-    id: 4,
+    id: 5,
     title: '🔥 Dropping the last 3 Gold Label Nugz',
     description:
       'The remaining 3 Gold Label Nugz will be available for purchase at the dispensary.',

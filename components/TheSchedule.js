@@ -13,10 +13,11 @@ function TheSchedule() {
     dayjs(event.date).isAfter(new Date())
   );
 
-  // sort events by data descending
+  // sort events by data descending and not in todaysEvents
   const pastEvents = events
     .filter((event) => dayjs(event.date).isBefore(new Date()))
-    .sort((a, b) => dayjs(b.date) - dayjs(a.date));
+    .sort((a, b) => dayjs(b.date) - dayjs(a.date))
+    .filter((event) => !todaysEvents.includes(event));
 
   return (
     <div>
