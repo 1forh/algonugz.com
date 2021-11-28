@@ -82,7 +82,7 @@ export default function Home() {
             </a>
           </div>
           <div className='mt-10'>
-            <h2 className='mb-6 text-3xl text-green-50'>Strains</h2>
+            <h2 className='mb-6 text-3xl text-green-50'>Nugz</h2>
             <div>
               <h3 className='text-2xl text-green-50'>Green Label</h3>
               <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
