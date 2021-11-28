@@ -1,34 +1,28 @@
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
-import format from 'date-fns/format';
-import parse from 'date-fns/parse';
-import startOfWeek from 'date-fns/startOfWeek';
-import getDay from 'date-fns/getDay';
-import enUS from 'date-fns/locale/en-US';
+import React from 'react';
+import TheScheduleEvent from './TheScheduleEvent';
+import { events } from '../data';
 
-import 'react-big-calendar/lib/css/react-big-calendar.css';
+function TheSchedule() {
+  return (
+    <div>
+      <div class='container mx-auto w-full h-full'>
+        <div class='relative wrap overflow-hidden p-10 h-full'>
+          <div
+            class='border-2-2 absolute border-opacity-20 border-gray-700 h-full border'
+            style={{ left: '50%' }}
+          ></div>
 
-const locales = {
-  'en-US': enUS,
-};
-
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-});
-
-const TheSchedule = ({ events }) => (
-  <div>
-    <Calendar
-      localizer={localizer}
-      events={events}
-      startAccessor='start'
-      endAccessor='end'
-      style={{ height: 500 }}
-    />
-  </div>
-);
+          {events.map((event, index) => (
+            <TheScheduleEvent
+              event={event}
+              side={index % 2 === 0 ? 'left' : 'right'}
+              key={index}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default TheSchedule;

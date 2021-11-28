@@ -1,6 +1,15 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Card from '../components/Card';
-import { strains, glass, prerolls } from '../data';
+import {
+  glass,
+  prerolls,
+  greenLabelStrains,
+  goldLabelStrains,
+  displayGoldLabelStrains,
+} from '../data';
+
+const scheduleVisible = false;
 
 export default function Home() {
   const title = 'AlgoNugz - An NFT Weed Dispensary';
@@ -36,13 +45,21 @@ export default function Home() {
                 <br /> Check out our home-grown collection of weed nugz.
               </h2>
             </div>
-            {/* <div>
-              <Link href='/schedule'>
-                <a className='text-lg font-medium text-green-300 transition-colors duration-150 hover:text-green-500'>
-                  Schedule
-                </a>
-              </Link>
-            </div> */}
+            {scheduleVisible && (
+              <div>
+                <Link href='/schedule'>
+                  <a className='flex items-center space-x-3 text-lg font-medium text-green-300 transition-colors duration-150 hover:text-green-500'>
+                    <svg className='w-5 h-5' viewBox='0 0 448 512'>
+                      <path
+                        fill='currentColor'
+                        d='M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z'
+                      ></path>
+                    </svg>
+                    <span>Schedule</span>
+                  </a>
+                </Link>
+              </div>
+            )}
           </div>
           <h3 className='overflow-scroll text-xl text-green-50'>
             Official Address:
@@ -73,24 +90,37 @@ export default function Home() {
             </a>
           </div>
           <div className='mt-10'>
-            <h2 className='text-3xl text-green-50'>Strains</h2>
-            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
-              {strains.map((it, index) => (
-                <Card item={it} key={index} />
-              ))}
+            <h2 className='mb-6 text-3xl text-green-50'>Strains</h2>
+            <div>
+              <h3 className='text-2xl text-green-50'>Green Label</h3>
+              <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+                {greenLabelStrains.map((it, index) => (
+                  <Card item={it} key={index} />
+                ))}
+              </div>
             </div>
+            {displayGoldLabelStrains && (
+              <div className='mt-10'>
+                <h3 className='text-2xl text-green-50'>Gold Label</h3>
+                <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+                  {goldLabelStrains.map((it, index) => (
+                    <Card item={it} key={index} />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           <div className='mt-10'>
-            <h2 className='text-3xl text-green-50'>Glass Pipes</h2>
-            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+            <h2 className='mb-6 text-3xl text-green-50'>Glass Pipes</h2>
+            <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
               {glass.map((it, index) => (
                 <Card item={it} key={index} />
               ))}
             </div>
           </div>
           <div className='mt-10'>
-            <h2 className='text-3xl text-green-50'>Prerolls</h2>
-            <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+            <h2 className='mb-6 text-3xl text-green-50'>Prerolls</h2>
+            <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
               {prerolls.map((it, index) => (
                 <Card item={it} key={index} />
               ))}

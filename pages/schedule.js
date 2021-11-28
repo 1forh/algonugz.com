@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
 
       <main className='px-5 py-10 md:px-20'>
-        {/* <TheSchedule events={events} /> */}
+        <TheSchedule events={events} />
       </main>
     </div>
   );

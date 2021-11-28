@@ -1,4 +1,4 @@
-export const strains = [
+export const greenLabelStrains = [
   {
     url: 'https://ab2.gallery/asset/432941101',
     image: '/nugz/NUG001.png',
@@ -6,6 +6,7 @@ export const strains = [
     name: 'Sour Diesel',
     total: 50,
     price: 4.2,
+    thc: '19%',
   },
   {
     url: 'https://ab2.gallery/asset/433312974',
@@ -14,6 +15,7 @@ export const strains = [
     name: 'Jack Herer',
     total: 10,
     price: 4.2,
+    thc: '18%',
   },
   {
     url: 'https://ab2.gallery/asset/434879391',
@@ -22,6 +24,7 @@ export const strains = [
     name: 'Wedding Cake',
     total: 10,
     price: 4.2,
+    thc: '19%',
   },
   {
     url: 'https://ab2.gallery/asset/434881568',
@@ -30,6 +33,7 @@ export const strains = [
     name: 'Durban Poison',
     total: 10,
     price: 4.2,
+    thc: '19%',
   },
   {
     url: 'https://ab2.gallery/asset/435489865',
@@ -38,6 +42,7 @@ export const strains = [
     name: 'Purple Urkle',
     total: 10,
     price: 4.2,
+    thc: '18%',
   },
   {
     url: 'https://ab2.gallery/asset/435492533',
@@ -46,55 +51,66 @@ export const strains = [
     name: 'Super Lemon Haze',
     total: 10,
     price: 4.2,
+    thc: '19%',
   },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG007.png',
-  //   id: 'NUG007',
-  //   name: 'Northern Lights',
-  //   total: 5,
-  //   price: 4.2,
-  // },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG008.png',
-  //   id: 'NUG008',
-  //   name: 'OG Kush',
-  //   total: 5,
-  //   price: 4.2,
-  // },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG009.png',
-  //   id: 'NUG009',
-  //   name: 'Blue Dream',
-  //   total: 5,
-  //   price: 4.2,
-  // },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG010.png',
-  //   id: 'NUG010',
-  //   name: 'Gelato',
-  //   total: 5,
-  //   price: 4.2,
-  // },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG010.png',
-  //   id: 'NUG011',
-  //   name: 'Purple Haze',
-  //   total: 5,
-  //   price: 4.2,
-  // },
-  // {
-  //   url: '',
-  //   image: '/nugz/NUG012.png',
-  //   id: 'NUG012',
-  //   name: 'Green Crack',
-  //   total: 5,
-  //   price: 4.2,
-  // },
+];
+
+export const displayGoldLabelStrains = false;
+export const goldLabelStrains = [
+  {
+    url: '',
+    image: '/nugz/NUG007.png',
+    id: 'NUG007',
+    name: 'Northern Lights',
+    total: 5,
+    price: 4.2,
+    thc: '20%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG008.png',
+    id: 'NUG008',
+    name: 'OG Kush',
+    total: 5,
+    price: 4.2,
+    thc: '23%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG009.png',
+    id: 'NUG009',
+    name: 'Blue Dream',
+    total: 5,
+    price: 4.2,
+    thc: '22%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG010.png',
+    id: 'NUG010',
+    name: 'Gelato',
+    total: 5,
+    price: 4.2,
+    thc: '21%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG010.png',
+    id: 'NUG011',
+    name: 'Purple Haze',
+    total: 5,
+    price: 4.2,
+    thc: '20%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG012.png',
+    id: 'NUG012',
+    name: 'Green Crack',
+    total: 5,
+    price: 4.2,
+    thc: '22%',
+  },
 ];
 
 export const glass = [
@@ -192,6 +208,7 @@ export const prerolls = [
     name: 'Preroll #001 - Sour Diesel',
     total: 50,
     price: 1,
+    thc: '19%',
   },
 ];
 
@@ -199,7 +216,8 @@ export const events = [
   {
     id: 0,
     title: 'Giveaway #001',
-    start: new Date(2021, 11, 23, 10, 0, 0, 0),
-    end: new Date(2021, 11, 27, 10, 0, 0, 0),
+    description: 'Twitter giveaway',
+    date: new Date(2021, 11, 27),
+    nft: greenLabelStrains[0], // Sour Diesel
   },
 ];
