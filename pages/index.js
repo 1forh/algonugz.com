@@ -1,15 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Card from '../components/Card';
-import {
-  glass,
-  prerolls,
-  greenLabelStrains,
-  goldLabelStrains,
-  displayGoldLabelStrains,
-} from '../data';
-
-const scheduleVisible = false;
+import { glass, prerolls, greenLabelStrains, goldLabelStrains } from '../data';
 
 export default function Home() {
   const title = 'AlgoNugz - An NFT Weed Dispensary';
@@ -35,8 +27,8 @@ export default function Home() {
 
       <main className='px-5 py-10 md:px-20'>
         <div>
-          <div className='flex justify-between'>
-            <div>
+          <div className='flex flex-col justify-between lg:flex-row'>
+            <div className='order-2 lg:order-1'>
               <h1 className='mb-2 text-5xl font-bold text-green-300'>
                 AlgoNugz
               </h1>
@@ -45,9 +37,9 @@ export default function Home() {
                 <br /> Check out our home-grown collection of weed nugz.
               </h2>
             </div>
-            {scheduleVisible && (
-              <div>
-                <Link href='/schedule'>
+            {process.env.NEXT_PUBLIC_SHOW_SCHEDULE_LINK === 'true' && (
+              <div className='order-1 mb-4 lg:order-2 lg:mb-0'>
+                <Link href='/events'>
                   <a className='flex items-center space-x-3 text-lg font-medium text-green-300 transition-colors duration-150 hover:text-green-500'>
                     <svg className='w-5 h-5' viewBox='0 0 448 512'>
                       <path
@@ -55,7 +47,7 @@ export default function Home() {
                         d='M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z'
                       ></path>
                     </svg>
-                    <span>Schedule</span>
+                    <span>Events</span>
                   </a>
                 </Link>
               </div>
@@ -99,7 +91,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            {displayGoldLabelStrains && (
+            {process.env.NEXT_PUBLIC_SHOW_GOLD_LABEL_STRAINS === 'true' && (
               <div className='mt-10'>
                 <h3 className='text-2xl text-green-50'>Gold Label</h3>
                 <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>

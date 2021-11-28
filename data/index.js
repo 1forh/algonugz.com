@@ -55,7 +55,6 @@ export const greenLabelStrains = [
   },
 ];
 
-export const displayGoldLabelStrains = false;
 export const goldLabelStrains = [
   {
     url: '',
@@ -215,9 +214,39 @@ export const prerolls = [
 export const events = [
   {
     id: 0,
-    title: 'Giveaway #001',
-    description: 'Twitter giveaway',
-    date: new Date(2021, 11, 27),
+    title: '🎉 Minted Green Label Nugz',
+    description:
+      'The first 6 AlgoNugz were minted on the Algorand blockchain. The Sour Diesel nug was minted with a total supply of 50. The other 5 Green Label Nugz were minted with a total supply of 10.',
+    date: '11/21/2021',
+  },
+  {
+    id: 1,
+    title: '✨ Minted Glass Pipes',
+    description:
+      'We minted a set of 12 1/1 Glass Pipe to smoke your sticky nugz out of.',
+    date: '11/24/2021',
+    nft: glass[0],
+  },
+  {
+    id: 2,
+    title: '🥳 Twitter Giveaway #1',
+    description:
+      'We gave away 2 Sour Diesel Nugz to 2 of our awesome Twitter followers.',
+    date: '11/27/2021',
     nft: greenLabelStrains[0], // Sour Diesel
+  },
+  {
+    id: 3,
+    title: '⭐️ Gold Label Nugz will be minted',
+    description:
+      'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves (they may be back). 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
+    date: '12/4/2021',
+  },
+  {
+    id: 4,
+    title: '🔥 Dropping the last 3 Gold Label Nugz',
+    description:
+      'The remaining 3 Gold Label Nugz will be available for purchase at the dispensary.',
+    date: '12/11/2021',
   },
 ];
