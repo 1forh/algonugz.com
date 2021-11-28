@@ -3,8 +3,8 @@ import TheSchedule from '../components/TheSchedule';
 import { events } from '../data';
 
 export default function Home() {
-  const title = 'Schedule - AlgoNugz';
-  const description = 'Our schedule of events';
+  const title = 'Events - AlgoNugz';
+  const description = 'A list of upcoming and past events';
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
