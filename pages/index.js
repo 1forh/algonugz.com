@@ -4,7 +4,7 @@ import Card from '../components/Card';
 import { glass, prerolls, greenLabelStrains, goldLabelStrains } from '../data';
 
 export default function Home() {
-  const title = 'AlgoNugz - An NFT Weed Dispensary';
+  const title = 'AlgoNugz - An NFT Cannabis Dispensary';
   const description =
     'An NFT dispensary with all of your favorite strains on the Algorand blockchain.';
 
@@ -33,8 +33,8 @@ export default function Home() {
                 AlgoNugz
               </h1>
               <h2 className='mb-10 text-xl text-green-50'>
-                An NFT weed dispensary with all of your favorite strains.
-                <br /> Check out our home-grown collection of weed nugz.
+                An NFT dispensary with all of your favorite strains.
+                <br /> Check out our home-grown collection of cannabis nugz.
               </h2>
             </div>
             {process.env.NEXT_PUBLIC_SHOW_SCHEDULE_LINK === 'true' && (
