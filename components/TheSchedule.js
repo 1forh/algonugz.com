@@ -39,9 +39,9 @@ function TheSchedule() {
 
           <h1 className='text-3xl font-bold text-green-300'>Events</h1>
           <p className='max-w-xl text-opacity-90 text-green-50'>
-            Here you will find a list of today's events and upcoming and past
-            events. Types of events could include giveaways, new Nugz or Glass
-            drops, and other exciting things!
+            Here you will find a list of upcoming and past events. Types of
+            events could include giveaways, new Nugz or Glass drops, and other
+            exciting things!
           </p>
         </div>
 
