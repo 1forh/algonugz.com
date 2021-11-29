@@ -114,7 +114,7 @@ export const goldLabelStrains = [
   },
 ];
 
-export const glass = [
+export const glassPipes = [
   {
     url: 'https://ab2.gallery/asset/440195494',
     image: '/glass/GLASS001.png',
@@ -201,6 +201,51 @@ export const glass = [
   },
 ];
 
+export const glassBongs = [
+  {
+    url: '',
+    image: '/glass/GLASS013.png',
+    id: 'GLASS013',
+    total: 1,
+    price: 10,
+  },
+  {
+    url: '',
+    image: '/glass/GLASS014.png',
+    id: 'GLASS014',
+    total: 1,
+    price: 10,
+  },
+  {
+    url: '',
+    image: '/glass/GLASS015.png',
+    id: 'GLASS015',
+    total: 1,
+    price: 10,
+  },
+  {
+    url: '',
+    image: '/glass/GLASS016.png',
+    id: 'GLASS016',
+    total: 1,
+    price: 10,
+  },
+  {
+    url: '',
+    image: '/glass/GLASS017.png',
+    id: 'GLASS017',
+    total: 1,
+    price: 10,
+  },
+  {
+    url: '',
+    image: '/glass/GLASS018.png',
+    id: 'GLASS018',
+    total: 1,
+    price: 10,
+  },
+];
+
 export const prerolls = [
   {
     url: 'https://ab2.gallery/asset/441631459',
@@ -235,7 +280,7 @@ export const events = [
     description:
       'We minted a set of 12 1/1 Glass Pipe to smoke your sticky nugz out of.',
     date: '11/24/2021',
-    nft: glass[0],
+    nft: glassPipes[0],
   },
   {
     id: uuidv4(),

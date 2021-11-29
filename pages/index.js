@@ -1,7 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Card from '../components/Card';
-import { glass, prerolls, greenLabelStrains, goldLabelStrains } from '../data';
+import {
+  glassPipes,
+  glassBongs,
+  prerolls,
+  greenLabelStrains,
+  goldLabelStrains,
+} from '../data';
 
 export default function Home() {
   const title = 'AlgoNugz - An NFT Cannabis Dispensary';
@@ -105,11 +111,21 @@ export default function Home() {
           <div className='mt-10'>
             <h2 className='mb-6 text-3xl text-green-50'>Glass Pipes</h2>
             <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
-              {glass.map((it, index) => (
+              {glassPipes.map((it, index) => (
                 <Card item={it} key={index} />
               ))}
             </div>
           </div>
+          {process.env.NEXT_PUBLIC_SHOW_GLASS_BONGS === 'true' && (
+            <div className='mt-10'>
+              <h2 className='mb-6 text-3xl text-green-50'>Glass Bongs</h2>
+              <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
+                {glassBongs.map((it, index) => (
+                  <Card item={it} key={index} />
+                ))}
+              </div>
+            </div>
+          )}
           <div className='mt-10'>
             <h2 className='mb-6 text-3xl text-green-50'>Prerolls</h2>
             <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
