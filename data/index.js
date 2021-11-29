@@ -265,7 +265,7 @@ export const events = [
     id: uuidv4(),
     title: '⭐️ Gold Label Nugz will be minted',
     description:
-      'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves (they may be back). 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
+      'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves. 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/4/2021',
   },
   {
