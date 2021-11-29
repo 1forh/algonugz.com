@@ -302,9 +302,24 @@ export const events = [
     id: uuidv4(),
     title: '🏷 Black Friday Sale Ends',
     description:
-      'Our Black Friday sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A. ',
+      'Our Black Friday sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A.',
     date: '11/28/2021',
     nft: prerolls[0], // Sour Diesel
+  },
+  {
+    id: uuidv4(),
+    title: '✨ First Set of Glass Bongs will be minted',
+    description:
+      'We will be minting 3 colored Glass Bongs. Each Glass Bong will have a total supply of 1. There will be a total of 6 Glass Bongs in the first set.',
+    date: '12/1/2021',
+    nft: glassBongs[2],
+  },
+  {
+    id: uuidv4(),
+    title: '✨ Remaining Glass Bongs from the first set will be minted',
+    description: 'The remaining 3 Glass Bongs will be minted.',
+    date: '12/3/2021',
+    nft: glassBongs[4],
   },
   {
     id: uuidv4(),
@@ -312,6 +327,7 @@ export const events = [
     description:
       'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves. 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/4/2021',
+    nft: goldLabelStrains[1],
   },
   {
     id: uuidv4(),
@@ -328,7 +344,7 @@ export const events = [
   },
   {
     id: uuidv4(),
-    title: '🔥 Dropping the last 3 Gold Label Nugz',
+    title: '⭐️ Dropping the last 3 Gold Label Nugz',
     description:
       'The remaining 3 Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/11/2021',

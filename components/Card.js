@@ -5,6 +5,16 @@ import { Controlled as ControlledZoom } from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import ZoomButton from './ZoomButton';
 
+const Wrapper = function ({ href, className, children }) {
+  if (href)
+    return (
+      <a href={href} className={className}>
+        {children}
+      </a>
+    );
+  return <div className={className}>{children}</div>;
+};
+
 function Card({ item }) {
   const [isZoomed, setIsZoomed] = useState(false);
 
@@ -18,7 +28,7 @@ function Card({ item }) {
   }, []);
 
   return (
-    <a href={item.url} className='group'>
+    <Wrapper href={item.url}>
       <div className='relative'>
         <div className='absolute top-0.5 right-0.5 z-20'>
           <ZoomButton onClick={showImage} />
@@ -65,7 +75,7 @@ function Card({ item }) {
       </p>
 
       <p className='text-green-300'>Total Supply: {item.total}</p>
-    </a>
+    </Wrapper>
   );
 }
 

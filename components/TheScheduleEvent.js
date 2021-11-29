@@ -22,7 +22,7 @@ function TheScheduleEvent({ event, className }) {
           </div>
 
           {event.nft && (
-            <div className='w-1/2'>
+            <div className='w-[260px]'>
               <Card item={event.nft} />
             </div>
           )}
