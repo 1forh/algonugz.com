@@ -321,7 +321,7 @@ export const events = [
       '✨ Remaining Glass Bongs from the first set will be available for purchase',
     description: 'The remaining 3 Glass Bongs will be available for purchase.',
     date: '12/3/2021',
-    nft: glassBongs[4],
+    nft: glassBongs[5],
   },
   {
     id: uuidv4(),
