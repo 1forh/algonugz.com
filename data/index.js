@@ -308,16 +308,18 @@ export const events = [
   },
   {
     id: uuidv4(),
-    title: '✨ First Set of Glass Bongs will be minted',
+    title:
+      '✨ First Set of Glass Bongs will be minted and available for purchase',
     description:
-      'We will be minting 3 colored Glass Bongs. Each Glass Bong will have a total supply of 1. There will be a total of 6 Glass Bongs in the first set.',
+      'We will be minting 6 colored Glass Bongs. Each Glass Bong will have a total supply of 1. The first 3 Glass Bongs will be available for purchase today!',
     date: '12/1/2021',
     nft: glassBongs[2],
   },
   {
     id: uuidv4(),
-    title: '✨ Remaining Glass Bongs from the first set will be minted',
-    description: 'The remaining 3 Glass Bongs will be minted.',
+    title:
+      '✨ Remaining Glass Bongs from the first set will be available for purchase',
+    description: 'The remaining 3 Glass Bongs will be available for purchase.',
     date: '12/3/2021',
     nft: glassBongs[4],
   },
