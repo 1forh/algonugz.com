@@ -18,6 +18,7 @@ export default function Home() {
     <div className='min-h-screen bg-gradient-to-br from-gray-900 to-[#354c25] font-body'>
       <Head>
         <title>{title}</title>
+        <meta name='description' content={description} />
 
         <meta property='og:title' content={title} />
         <meta property='og:description' content={description} />
