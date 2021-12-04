@@ -59,7 +59,7 @@ export const greenLabelStrains = [
 
 export const goldLabelStrains = [
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/454884262',
     image: '/nugz/NUG007.png',
     id: 'NUG007',
     name: 'Northern Lights',
@@ -68,7 +68,7 @@ export const goldLabelStrains = [
     thc: '20%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/454888693',
     image: '/nugz/NUG008.png',
     id: 'NUG008',
     name: 'OG Kush',
@@ -77,7 +77,7 @@ export const goldLabelStrains = [
     thc: '23%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/454890313',
     image: '/nugz/NUG009.png',
     id: 'NUG009',
     name: 'Blue Dream',
@@ -85,33 +85,33 @@ export const goldLabelStrains = [
     price: 4.2,
     thc: '22%',
   },
-  {
-    url: '',
-    image: '/nugz/NUG010.png',
-    id: 'NUG010',
-    name: 'Gelato',
-    total: 5,
-    price: 4.2,
-    thc: '21%',
-  },
-  {
-    url: '',
-    image: '/nugz/NUG010.png',
-    id: 'NUG011',
-    name: 'Purple Haze',
-    total: 5,
-    price: 4.2,
-    thc: '20%',
-  },
-  {
-    url: '',
-    image: '/nugz/NUG012.png',
-    id: 'NUG012',
-    name: 'Green Crack',
-    total: 5,
-    price: 4.2,
-    thc: '22%',
-  },
+  // {
+  //   url: '',
+  //   image: '/nugz/NUG010.png',
+  //   id: 'NUG010',
+  //   name: 'Gelato',
+  //   total: 5,
+  //   price: 4.2,
+  //   thc: '21%',
+  // },
+  // {
+  //   url: '',
+  //   image: '/nugz/NUG010.png',
+  //   id: 'NUG011',
+  //   name: 'Purple Haze',
+  //   total: 5,
+  //   price: 4.2,
+  //   thc: '20%',
+  // },
+  // {
+  //   url: '',
+  //   image: '/nugz/NUG012.png',
+  //   id: 'NUG012',
+  //   name: 'Green Crack',
+  //   total: 5,
+  //   price: 4.2,
+  //   thc: '22%',
+  // },
 ];
 
 export const glassPipes = [
