@@ -345,7 +345,7 @@ export const events = [
     id: uuidv4(),
     title: '⭐️ Gold Label Nugz will be minted',
     description:
-      'We will be minting 6 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves. 3 of the Gold Label Nugz will be available for purchase at the dispensary.',
+      'We will be minting 3 Gold Label Nugz. Each of the nugz will have a total supply of 5. The Green Label Nugz will be removed from our shelves. These Gold Label Nugz will be available for purchase at the dispensary.',
     date: '12/4/2021',
     nft: goldLabelStrains[1],
   },
@@ -361,12 +361,5 @@ export const events = [
     title: '🥳 Twitter Giveaway #2 Ends',
     description: 'We will announce the winners of our second giveaway.',
     date: '12/8/2021',
-  },
-  {
-    id: uuidv4(),
-    title: '⭐️ Dropping the last 3 Gold Label Nugz',
-    description:
-      'The remaining 3 Gold Label Nugz will be available for purchase at the dispensary.',
-    date: '12/11/2021',
   },
 ];
