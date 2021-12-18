@@ -278,7 +278,7 @@ export const prerolls = [
 
 export const lighters = [
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/473134570',
     image: '/lighters/LIGHT001.png',
     id: 'LIGHT001',
     name: 'Red Lighter',
