@@ -86,7 +86,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/473118507',
     image: '/nugz/NUG010.png',
     id: 'NUG010',
     name: 'Gelato',
@@ -95,7 +95,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/473121471',
     image: '/nugz/NUG011.png',
     id: 'NUG011',
     name: 'Purple Haze',
@@ -104,7 +104,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/473123902',
     image: '/nugz/NUG012.png',
     id: 'NUG012',
     name: 'Green Crack',
