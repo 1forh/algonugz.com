@@ -92,7 +92,7 @@ export const goldLabelStrains = [
     name: 'Gelato',
     total: 5,
     price: 4.2,
-    thc: '21%',
+    thc: '22%',
   },
   {
     url: '',
@@ -101,7 +101,7 @@ export const goldLabelStrains = [
     name: 'Purple Haze',
     total: 5,
     price: 4.2,
-    thc: '20%',
+    thc: '22%',
   },
   {
     url: '',
@@ -110,7 +110,7 @@ export const goldLabelStrains = [
     name: 'Green Crack',
     total: 5,
     price: 4.2,
-    thc: '22%',
+    thc: '23%',
   },
 ];
 
