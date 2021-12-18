@@ -5,6 +5,7 @@ import {
   glassPipes,
   glassBongs,
   prerolls,
+  lighters,
   greenLabelStrains,
   goldLabelStrains,
 } from '../data';
@@ -131,6 +132,15 @@ export default function Home() {
             <h2 className='mb-6 text-3xl text-green-50'>Prerolls</h2>
             <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
               {prerolls.map((it, index) => (
+                <Card item={it} key={index} />
+              ))}
+            </div>
+          </div>
+
+          <div className='mt-10'>
+            <h2 className='mb-6 text-3xl text-green-50'>Accessories</h2>
+            <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6'>
+              {lighters.map((it, index) => (
                 <Card item={it} key={index} />
               ))}
             </div>

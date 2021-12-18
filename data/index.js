@@ -276,6 +276,17 @@ export const prerolls = [
   },
 ];
 
+export const lighters = [
+  {
+    url: '',
+    image: '/lighters/LIGHT001.png',
+    id: 'LIGHT001',
+    name: 'Red Lighter',
+    total: 50,
+    price: 0.5,
+  },
+];
+
 export const events = [
   {
     id: uuidv4(),
