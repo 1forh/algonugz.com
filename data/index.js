@@ -289,10 +289,10 @@ export const lighters = [
 
 export const packed = [
   {
-    url: '',
-    image: '/packed/PACKED_001.png',
-    id: 'PACKED001',
-    name: 'Packed Bowl #001 - Blue Dream',
+    url: 'https://ab2.gallery/asset/501236123',
+    image: '/packed/PACKED_01.png',
+    id: 'PACKED01',
+    name: 'Packed Bowl - Blue Dream',
     total: 1,
     thc: '22%',
   },
@@ -399,5 +399,21 @@ export const events = [
       'Our Christmas sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A.',
     date: '12/26/2021',
     nft: prerolls[0], // Sour Diesel
+  },
+  {
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #4 Begins',
+    description:
+      "Get in the circle and lets light this up! 🔥💨 We're doing an appreciate giveaway to all of our dispensary customers!",
+    date: '12/26/2021',
+    nft: packed[0],
+  },
+  {
+    id: uuidv4(),
+    title: '🥳 Twitter Giveaway #4 End',
+    description:
+      "Get in the circle and lets light this up! 🔥💨 We're doing an appreciate giveaway to all of our dispensary customers!",
+    date: '12/27/2021',
+    nft: packed[0],
   },
 ];
