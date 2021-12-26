@@ -19,6 +19,8 @@ function TheSchedule() {
     .sort((a, b) => dayjs(b.date) - dayjs(a.date))
     .filter((event) => !todaysEvents.includes(event));
 
+  console.log(todaysEvents, upcomingEvents, pastEvents);
+
   return (
     <div>
       <div className='container w-full h-full mx-auto'>
