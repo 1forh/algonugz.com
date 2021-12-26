@@ -386,7 +386,7 @@ export const events = [
     title: '🎄 Christmas Sale Ends',
     description:
       'Our Christmas sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A.',
-    date: '12/25/2021',
+    date: '12/26/2021',
     nft: prerolls[0], // Sour Diesel
   },
 ];
