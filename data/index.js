@@ -381,4 +381,12 @@ export const events = [
     date: '12/18/2021',
     nft: goldLabelStrains[5],
   },
+  {
+    id: uuidv4(),
+    title: '🎄 Christmas Sale Ends',
+    description:
+      'Our Christmas sale ends today. Get "Preroll #001 - Sour Diesel" for only 1A.',
+    date: '12/26/2021',
+    nft: prerolls[0], // Sour Diesel
+  },
 ];
