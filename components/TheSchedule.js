@@ -48,51 +48,53 @@ function TheSchedule() {
           </p>
         </div>
 
-        {todaysEvents.length > 0 && (
-          <div>
-            <h2 className='mb-6 text-xl font-medium text-green-50'>Today</h2>
-
+        <div className='flex flex-col justify-start max-w-2xl divide-y divide-green-100 align-start'>
+          {todaysEvents.length > 0 && (
             <div>
-              {todaysEvents.map((event) => (
-                <TheScheduleEvent key={event.id} event={event} />
-              ))}
+              <h2 className='mb-8 text-xl font-medium text-green-50'>Today</h2>
+
+              <div>
+                {todaysEvents.map((event) => (
+                  <TheScheduleEvent key={event.id} event={event} />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        <div className='w-full h-[2px] max-w-xl mb-8 bg-green-50 bg-opacity-20'></div>
+          {/* <div className='w-full h-[2px] max-w-xl mb-8 bg-green-50 bg-opacity-20'></div> */}
 
-        {upcomingEvents.length > 0 && (
-          <div>
-            <h2 className='mb-8 text-xl font-medium text-green-50'>
-              Upcoming Events
-            </h2>
-            <div>
-              {upcomingEvents.map((event) => (
-                <TheScheduleEvent key={event.id} event={event} />
-              ))}
+          {upcomingEvents.length > 0 && ( // if upcomingEvents.length > 0
+            <div className={todaysEvents.length > 0 ? 'pt-8' : ''}>
+              <h2 className='mb-8 text-xl font-medium text-green-50'>
+                Upcoming Events
+              </h2>
+              <div>
+                {upcomingEvents.map((event) => (
+                  <TheScheduleEvent key={event.id} event={event} />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        <div className='w-full h-[2px] max-w-xl mb-8 bg-green-50 bg-opacity-20'></div>
+          {/* <div className='w-full h-[2px] max-w-xl mb-8 bg-green-50 bg-opacity-20'></div> */}
 
-        {pastEvents.length > 0 && (
-          <div>
-            <h2 className='mb-8 text-xl font-medium text-green-50'>
-              Past Events
-            </h2>
-            <div>
-              {pastEvents.map((event) => (
-                <TheScheduleEvent
-                  key={event.id}
-                  event={event}
-                  className='opacity-75'
-                />
-              ))}
+          {pastEvents.length > 0 && (
+            <div className='pt-8'>
+              <h2 className='mb-8 text-xl font-medium text-green-50'>
+                Past Events
+              </h2>
+              <div>
+                {pastEvents.map((event) => (
+                  <TheScheduleEvent
+                    key={event.id}
+                    event={event}
+                    className='opacity-75'
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
