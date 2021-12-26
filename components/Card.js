@@ -64,15 +64,17 @@ function Card({ item }) {
           className='absolute inset-0 z-10 rounded-lg'
         />
       </div>
-      <p className='text-green-50'>{item.id}</p>
+      {/* <p className='text-green-50'>{item.id}</p> */}
       {item.name && <h3 className='text-green-50'>{item.name}</h3>}
 
       {item.thc && <p className='flex text-green-50'>THC {item.thc}</p>}
 
-      <p className='flex text-green-50'>
-        <span>OG price: &nbsp;</span>
-        <Price price={item.price} />
-      </p>
+      {item.price && (
+        <p className='flex text-green-50'>
+          <span>OG price: &nbsp;</span>
+          <Price price={item.price} />
+        </p>
+      )}
 
       <p className='text-green-300'>Total Supply: {item.total}</p>
     </Wrapper>

@@ -287,6 +287,17 @@ export const lighters = [
   },
 ];
 
+export const packed = [
+  {
+    url: '',
+    image: '/packed/PACKED_001.png',
+    id: 'PACKED001',
+    name: 'Packed Bowl #001 - Blue Dream',
+    total: 1,
+    thc: '22%',
+  },
+];
+
 export const events = [
   {
     id: uuidv4(),
