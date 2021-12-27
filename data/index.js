@@ -413,7 +413,7 @@ export const events = [
     title: '🥳 Twitter Giveaway #4 End',
     description:
       "Get in the circle and lets light this up! 🔥💨 We're doing an appreciate giveaway to all of our dispensary customers!",
-    date: '12/27/2021',
+    date: '12/28/2021',
     nft: packed[0],
   },
 ];
