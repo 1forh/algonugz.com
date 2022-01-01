@@ -118,7 +118,7 @@ export default function Home() {
                 </div>
               </div>
             )}
-            <div>
+            <div className='mt-10'>
               <h3 className='text-2xl text-green-50'>Green Label</h3>
               <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
                 {greenLabelStrains.map((it, index) => (
