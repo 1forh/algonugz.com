@@ -114,6 +114,18 @@ export const goldLabelStrains = [
   },
 ];
 
+export const blackLabelStrains = [
+  {
+    url: '',
+    image: '/nugz/NUG013.png',
+    id: 'NUG013',
+    name: 'TBD',
+    total: 1,
+    price: 8,
+    thc: '26%',
+  },
+];
+
 export const glassPipes = [
   {
     url: 'https://ab2.gallery/asset/440195494',

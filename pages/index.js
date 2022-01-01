@@ -9,6 +9,7 @@ import {
   packed,
   greenLabelStrains,
   goldLabelStrains,
+  blackLabelStrains,
 } from '../data';
 
 export default function Home() {
@@ -97,14 +98,16 @@ export default function Home() {
           </h3>
           <div className='mt-10'>
             <h2 className='mb-6 text-3xl text-green-50'>Nugz</h2>
-            <div>
-              <h3 className='text-2xl text-green-50'>Green Label</h3>
-              <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
-                {greenLabelStrains.map((it, index) => (
-                  <Card item={it} key={index} />
-                ))}
+            {process.env.NEXT_PUBLIC_SHOW_BLACK_LABEL_STRAINS === 'true' && (
+              <div className='mt-10'>
+                <h3 className='text-2xl text-green-50'>Black Label</h3>
+                <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+                  {blackLabelStrains.map((it, index) => (
+                    <Card item={it} key={index} />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
             {process.env.NEXT_PUBLIC_SHOW_GOLD_LABEL_STRAINS === 'true' && (
               <div className='mt-10'>
                 <h3 className='text-2xl text-green-50'>Gold Label</h3>
@@ -115,6 +118,14 @@ export default function Home() {
                 </div>
               </div>
             )}
+            <div>
+              <h3 className='text-2xl text-green-50'>Green Label</h3>
+              <div className='grid grid-cols-2 gap-5 mt-6 md:grid-cols-3 lg:grid-cols-6'>
+                {greenLabelStrains.map((it, index) => (
+                  <Card item={it} key={index} />
+                ))}
+              </div>
+            </div>
           </div>
           <div className='mt-10'>
             <h2 className='mb-6 text-3xl text-green-50'>Glass Pipes</h2>
