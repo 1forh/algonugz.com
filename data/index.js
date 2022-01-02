@@ -121,8 +121,17 @@ export const blackLabelStrains = [
     id: 'NUG013',
     name: 'TBD',
     total: 1,
-    price: 8,
+    price: 6,
     thc: '26%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG014.png',
+    id: 'NUG014',
+    name: 'TBD',
+    total: 1,
+    price: 6,
+    thc: '27%',
   },
 ];
 
@@ -427,5 +436,13 @@ export const events = [
       "Get in the circle and lets light this up! 🔥💨 We're doing an appreciate giveaway to all of our dispensary customers!",
     date: '12/28/2021',
     nft: packed[0],
+  },
+  {
+    id: uuidv4(),
+    title: '⚫️ The first Black Label Nugz will be dropped',
+    description:
+      "Each Black Label Nug will be a unique 1/1 cannabis nug and will have the highest THC content we've seen yet. We will be dropping the first of these nugz today!",
+    date: '01/7/2022',
+    nft: blackLabelStrains[0],
   },
 ];
