@@ -116,7 +116,7 @@ export const goldLabelStrains = [
 
 export const blackLabelStrains = [
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519201143',
     image: '/nugz/NUG013.png',
     id: 'NUG013',
     name: 'Bubba Kush',
@@ -125,7 +125,7 @@ export const blackLabelStrains = [
     thc: '26%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519203020',
     image: '/nugz/NUG014.png',
     id: 'NUG014',
     name: 'Purple Kush',
@@ -134,7 +134,7 @@ export const blackLabelStrains = [
     thc: '27%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519203888',
     image: '/nugz/NUG015.png',
     id: 'NUG015',
     name: 'Afghan Kush',
@@ -143,7 +143,7 @@ export const blackLabelStrains = [
     thc: '27%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519204978',
     image: '/nugz/NUG016.png',
     id: 'NUG016',
     name: 'Hindu Kush',
@@ -152,7 +152,7 @@ export const blackLabelStrains = [
     thc: '25%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519205933',
     image: '/nugz/NUG017.png',
     id: 'NUG017',
     name: 'White Widow',
@@ -161,7 +161,7 @@ export const blackLabelStrains = [
     thc: '24%',
   },
   {
-    url: '',
+    url: 'https://ab2.gallery/asset/519206595',
     image: '/nugz/NUG018.png',
     id: 'NUG018',
     name: 'AK-47',
