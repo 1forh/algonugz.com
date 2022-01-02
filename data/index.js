@@ -133,6 +133,33 @@ export const blackLabelStrains = [
     price: 6,
     thc: '27%',
   },
+  {
+    url: '',
+    image: '/nugz/NUG015.png',
+    id: 'NUG015',
+    name: 'Afghan Kush',
+    total: 1,
+    price: 6,
+    thc: '27%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG016.png',
+    id: 'NUG016',
+    name: 'Hindu Kush',
+    total: 1,
+    price: 6,
+    thc: '25%',
+  },
+  {
+    url: '',
+    image: '/nugz/NUG017.png',
+    id: 'NUG017',
+    name: 'TBD',
+    total: 1,
+    price: 6,
+    thc: '24%',
+  },
 ];
 
 export const glassPipes = [
