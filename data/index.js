@@ -169,6 +169,15 @@ export const blackLabelStrains = [
     price: 6,
     thc: '26%',
   },
+  {
+    url: 'https://ab2.gallery/asset/519206595',
+    image: '/nugz/NUG019.png',
+    id: 'NUG019',
+    name: 'Bruce Banner',
+    total: 1,
+    price: 6,
+    thc: '25%',
+  },
 ];
 
 export const glassPipes = [
