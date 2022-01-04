@@ -170,7 +170,7 @@ export const blackLabelStrains = [
     thc: '26%',
   },
   {
-    url: 'https://ab2.gallery/asset/519206595',
+    url: '',
     image: '/nugz/NUG019.png',
     id: 'NUG019',
     name: 'Bruce Banner',
