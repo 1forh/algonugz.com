@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const greenLabelStrains = [
   {
-    url: 'https://ab2.gallery/asset/432941101',
+    url: 'https://www.nftexplorer.app/asset/432941101',
     image: '/nugz/NUG001.png',
     id: 'NUG001',
     name: 'Sour Diesel',
@@ -11,7 +11,7 @@ export const greenLabelStrains = [
     thc: '19%',
   },
   {
-    url: 'https://ab2.gallery/asset/433312974',
+    url: 'https://www.nftexplorer.app/asset/433312974',
     image: '/nugz/NUG002.png',
     id: 'NUG002',
     name: 'Jack Herer',
@@ -20,7 +20,7 @@ export const greenLabelStrains = [
     thc: '18%',
   },
   {
-    url: 'https://ab2.gallery/asset/434879391',
+    url: 'https://www.nftexplorer.app/asset/434879391',
     image: '/nugz/NUG003.png',
     id: 'NUG003',
     name: 'Wedding Cake',
@@ -29,7 +29,7 @@ export const greenLabelStrains = [
     thc: '19%',
   },
   {
-    url: 'https://ab2.gallery/asset/434881568',
+    url: 'https://www.nftexplorer.app/asset/434881568',
     image: '/nugz/NUG004.png',
     id: 'NUG004',
     name: 'Durban Poison',
@@ -38,7 +38,7 @@ export const greenLabelStrains = [
     thc: '19%',
   },
   {
-    url: 'https://ab2.gallery/asset/435489865',
+    url: 'https://www.nftexplorer.app/asset/435489865',
     image: '/nugz/NUG005.png',
     id: 'NUG005',
     name: 'Purple Urkle',
@@ -47,7 +47,7 @@ export const greenLabelStrains = [
     thc: '18%',
   },
   {
-    url: 'https://ab2.gallery/asset/435492533',
+    url: 'https://www.nftexplorer.app/asset/435492533',
     image: '/nugz/NUG006.png',
     id: 'NUG006',
     name: 'Super Lemon Haze',
@@ -59,7 +59,7 @@ export const greenLabelStrains = [
 
 export const goldLabelStrains = [
   {
-    url: 'https://ab2.gallery/asset/454884262',
+    url: 'https://www.nftexplorer.app/asset/454884262',
     image: '/nugz/NUG007.png',
     id: 'NUG007',
     name: 'Northern Lights',
@@ -68,7 +68,7 @@ export const goldLabelStrains = [
     thc: '20%',
   },
   {
-    url: 'https://ab2.gallery/asset/454888693',
+    url: 'https://www.nftexplorer.app/asset/454888693',
     image: '/nugz/NUG008.png',
     id: 'NUG008',
     name: 'OG Kush',
@@ -77,7 +77,7 @@ export const goldLabelStrains = [
     thc: '23%',
   },
   {
-    url: 'https://ab2.gallery/asset/454890313',
+    url: 'https://www.nftexplorer.app/asset/454890313',
     image: '/nugz/NUG009.png',
     id: 'NUG009',
     name: 'Blue Dream',
@@ -86,7 +86,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: 'https://ab2.gallery/asset/473118507',
+    url: 'https://www.nftexplorer.app/asset/473118507',
     image: '/nugz/NUG010.png',
     id: 'NUG010',
     name: 'Gelato',
@@ -95,7 +95,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: 'https://ab2.gallery/asset/473121471',
+    url: 'https://www.nftexplorer.app/asset/473121471',
     image: '/nugz/NUG011.png',
     id: 'NUG011',
     name: 'Purple Haze',
@@ -104,7 +104,7 @@ export const goldLabelStrains = [
     thc: '22%',
   },
   {
-    url: 'https://ab2.gallery/asset/473123902',
+    url: 'https://www.nftexplorer.app/asset/473123902',
     image: '/nugz/NUG012.png',
     id: 'NUG012',
     name: 'Green Crack',
@@ -116,7 +116,7 @@ export const goldLabelStrains = [
 
 export const blackLabelStrains = [
   {
-    url: 'https://ab2.gallery/asset/519201143',
+    url: 'https://www.nftexplorer.app/asset/519201143',
     image: '/nugz/NUG013.png',
     id: 'NUG013',
     name: 'Bubba Kush',
@@ -125,7 +125,7 @@ export const blackLabelStrains = [
     thc: '26%',
   },
   {
-    url: 'https://ab2.gallery/asset/519203020',
+    url: 'https://www.nftexplorer.app/asset/519203020',
     image: '/nugz/NUG014.png',
     id: 'NUG014',
     name: 'Purple Kush',
@@ -134,7 +134,7 @@ export const blackLabelStrains = [
     thc: '27%',
   },
   {
-    url: 'https://ab2.gallery/asset/519203888',
+    url: 'https://www.nftexplorer.app/asset/519203888',
     image: '/nugz/NUG015.png',
     id: 'NUG015',
     name: 'Afghan Kush',
@@ -143,7 +143,7 @@ export const blackLabelStrains = [
     thc: '27%',
   },
   {
-    url: 'https://ab2.gallery/asset/519204978',
+    url: 'https://www.nftexplorer.app/asset/519204978',
     image: '/nugz/NUG016.png',
     id: 'NUG016',
     name: 'Hindu Kush',
@@ -152,7 +152,7 @@ export const blackLabelStrains = [
     thc: '25%',
   },
   {
-    url: 'https://ab2.gallery/asset/519205933',
+    url: 'https://www.nftexplorer.app/asset/519205933',
     image: '/nugz/NUG017.png',
     id: 'NUG017',
     name: 'White Widow',
@@ -161,7 +161,7 @@ export const blackLabelStrains = [
     thc: '24%',
   },
   {
-    url: 'https://ab2.gallery/asset/519206595',
+    url: 'https://www.nftexplorer.app/asset/519206595',
     image: '/nugz/NUG018.png',
     id: 'NUG018',
     name: 'AK-47',
@@ -182,7 +182,7 @@ export const blackLabelStrains = [
 
 export const glassPipes = [
   {
-    url: 'https://ab2.gallery/asset/440195494',
+    url: 'https://www.nftexplorer.app/asset/440195494',
     image: '/glass/GLASS001.png',
     id: 'GLASS001',
     name: 'Glass Pipe #001',
@@ -190,7 +190,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/440198867',
+    url: 'https://www.nftexplorer.app/asset/440198867',
     image: '/glass/GLASS002.png',
     id: 'GLASS002',
     name: 'Glass Pipe #002',
@@ -198,7 +198,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/440202528',
+    url: 'https://www.nftexplorer.app/asset/440202528',
     image: '/glass/GLASS003.png',
     id: 'GLASS003',
     name: 'Glass Pipe #003',
@@ -206,7 +206,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/440204216',
+    url: 'https://www.nftexplorer.app/asset/440204216',
     image: '/glass/GLASS004.png',
     id: 'GLASS004',
     name: 'Glass Pipe #004',
@@ -214,7 +214,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/440209551',
+    url: 'https://www.nftexplorer.app/asset/440209551',
     image: '/glass/GLASS005.png',
     id: 'GLASS005',
     name: 'Glass Pipe #005',
@@ -222,7 +222,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/440211179',
+    url: 'https://www.nftexplorer.app/asset/440211179',
     image: '/glass/GLASS006.png',
     id: 'GLASS006',
     name: 'Glass Pipe #006',
@@ -230,7 +230,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441374122',
+    url: 'https://www.nftexplorer.app/asset/441374122',
     image: '/glass/GLASS007.png',
     id: 'GLASS007',
     name: 'Glass Pipe #007',
@@ -238,7 +238,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441403797',
+    url: 'https://www.nftexplorer.app/asset/441403797',
     image: '/glass/GLASS008.png',
     id: 'GLASS008',
     name: 'Glass Pipe #008',
@@ -246,7 +246,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441377185',
+    url: 'https://www.nftexplorer.app/asset/441377185',
     image: '/glass/GLASS009.png',
     id: 'GLASS009',
     name: 'Glass Pipe #009',
@@ -254,7 +254,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441381089',
+    url: 'https://www.nftexplorer.app/asset/441381089',
     image: '/glass/GLASS010.png',
     id: 'GLASS010',
     name: 'Glass Pipe #010',
@@ -262,7 +262,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441384674',
+    url: 'https://www.nftexplorer.app/asset/441384674',
     image: '/glass/GLASS011.png',
     id: 'GLASS011',
     name: 'Glass Pipe #011',
@@ -270,7 +270,7 @@ export const glassPipes = [
     price: 7,
   },
   {
-    url: 'https://ab2.gallery/asset/441406410',
+    url: 'https://www.nftexplorer.app/asset/441406410',
     image: '/glass/GLASS012.png',
     id: 'GLASS012',
     name: 'Glass Pipe #012',
@@ -281,7 +281,7 @@ export const glassPipes = [
 
 export const glassBongs = [
   {
-    url: 'https://ab2.gallery/asset/450370650',
+    url: 'https://www.nftexplorer.app/asset/450370650',
     image: '/bongs/BONG001.png',
     id: 'BONG001',
     name: 'Glass Bong #001',
@@ -289,7 +289,7 @@ export const glassBongs = [
     price: 10,
   },
   {
-    url: 'https://ab2.gallery/asset/450372183',
+    url: 'https://www.nftexplorer.app/asset/450372183',
     image: '/bongs/BONG002.png',
     id: 'BONG002',
     name: 'Glass Bong #002',
@@ -297,7 +297,7 @@ export const glassBongs = [
     price: 10,
   },
   {
-    url: 'https://ab2.gallery/asset/450378967',
+    url: 'https://www.nftexplorer.app/asset/450378967',
     image: '/bongs/BONG003.png',
     id: 'BONG003',
     name: 'Glass Bong #003',
@@ -305,7 +305,7 @@ export const glassBongs = [
     price: 10,
   },
   {
-    url: 'https://ab2.gallery/asset/450383411',
+    url: 'https://www.nftexplorer.app/asset/450383411',
     image: '/bongs/BONG004.png',
     id: 'BONG004',
     name: 'Glass Bong #004',
@@ -313,7 +313,7 @@ export const glassBongs = [
     price: 10,
   },
   {
-    url: 'https://ab2.gallery/asset/450384792',
+    url: 'https://www.nftexplorer.app/asset/450384792',
     image: '/bongs/BONG005.png',
     id: 'BONG005',
     name: 'Glass Bong #005',
@@ -321,7 +321,7 @@ export const glassBongs = [
     price: 10,
   },
   {
-    url: 'https://ab2.gallery/asset/450386347',
+    url: 'https://www.nftexplorer.app/asset/450386347',
     image: '/bongs/BONG006.png',
     id: 'BONG006',
     name: 'Glass Bong #006',
@@ -332,7 +332,7 @@ export const glassBongs = [
 
 export const prerolls = [
   {
-    url: 'https://ab2.gallery/asset/441631459',
+    url: 'https://www.nftexplorer.app/asset/441631459',
     image: '/prerolls/PREROLL001.png',
     id: 'JOINT001',
     name: 'Preroll #001 - Sour Diesel',
@@ -344,7 +344,7 @@ export const prerolls = [
 
 export const lighters = [
   {
-    url: 'https://ab2.gallery/asset/473134570',
+    url: 'https://www.nftexplorer.app/asset/473134570',
     image: '/lighters/LIGHT001.png',
     id: 'LIGHT001',
     name: 'Red Lighter',
@@ -355,7 +355,7 @@ export const lighters = [
 
 export const packed = [
   {
-    url: 'https://ab2.gallery/asset/501236123',
+    url: 'https://www.nftexplorer.app/asset/501236123',
     image: '/packed/PACKED_01.png',
     id: 'PACKED01',
     name: 'Packed Bowl - Blue Dream',
