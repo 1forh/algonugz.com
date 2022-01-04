@@ -170,7 +170,7 @@ export const blackLabelStrains = [
     thc: '26%',
   },
   {
-    url: '',
+    url: 'https://www.nftexplorer.app/asset/522681959',
     image: '/nugz/NUG019.png',
     id: 'NUG019',
     name: 'Bruce Banner',
