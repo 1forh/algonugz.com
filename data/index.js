@@ -178,6 +178,15 @@ export const blackLabelStrains = [
     price: 6,
     thc: '25%',
   },
+  {
+    url: 'https://www.nftexplorer.app/asset/527514454',
+    image: '/nugz/NUG020.png',
+    id: 'NUG020',
+    name: 'Girl Scout Cookies',
+    total: 1,
+    price: 6,
+    thc: '24%',
+  },
 ];
 
 export const glassPipes = [
